@@ -40,6 +40,12 @@ nav ul a {
     font-size: 1.4rem;
 }
 
+i {
+    font-size: 35px;
+    color: white;
+    margin-right: 10px;
+}
+
 
 /** Menu Sencillo **/
 
@@ -114,11 +120,28 @@ nav ul a {
 
 /** Redes Socialaes**/
 
-.iconos ul li a {
-    width: 10%;
-    display: inline;
-    justify-content: right;
-}
-
 
 /* Social y dropdown*/
+
+@media screen and (min-width: 768px) {
+    #iconos {
+        display: flex;
+        flex-direction: row;
+    }
+    #iconos ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #iconos ul li ul {
+        display: none;
+    }
+    #iconos ul li:nth-child(2):hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #iconos ul li:nth-child(3):hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
