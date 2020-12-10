@@ -68,7 +68,19 @@ i {
     background-image: url();
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .iconos ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .iconos ul li {
+        flex: 0 1 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
     .iconos ul {
         display: flex;
         flex-direction: row;
@@ -120,27 +132,55 @@ i {
 
 /** Redes Socialaes**/
 
+span {
+    display: none;
+}
+
+#iconosBarras ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 
 /* Social y dropdown*/
 
+#iconosSaludos ul:nth-child(1) {
+    width: 50%;
+}
+
+#iconosSaludos ul:nth-child(1) li ul {
+    flex-direction: column;
+}
+
+#iconosSaludos ul:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#iconosSaludos ul li ul li:hover {
+    background-color: #ff5e62;
+}
+
 @media screen and (min-width: 768px) {
-    #iconos {
+    #iconosSaludos {
         display: flex;
         flex-direction: row;
     }
-    #iconos ul {
+    #iconosSaludos ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    #iconos ul li ul {
+    #iconosSaludos ul li ul {
         display: none;
     }
-    #iconos ul li:nth-child(2):hover ul {
+    #iconosSaludos ul li:nth-child(2):hover ul {
         display: flex;
         flex-direction: column;
     }
-    #iconos ul li:nth-child(3):hover ul {
+    #iconosSaludos ul li:nth-child(3):hover ul {
         display: flex;
         flex-direction: column;
     }
