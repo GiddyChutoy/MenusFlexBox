@@ -130,7 +130,7 @@ i {
 }
 
 
-/** Redes Socialaes**/
+/** Redes Sociales**/
 
 span {
     display: none;
@@ -167,11 +167,13 @@ span {
     #iconosSaludos {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
     }
-    #iconosSaludos ul {
+    #segundalista {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        margin-left: 100px;
+        height: 70px;
     }
     #iconosSaludos ul li ul {
         display: none;
